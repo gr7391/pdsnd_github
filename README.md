@@ -11,6 +11,6 @@ updating documentation bikeshare.py using text editor atom
 ### Files used
 Bikeshare.py chicago.csv new_york_city.csv washington.csv .gitignore 
 
-### Credits Stack overflow creating a .gitignore GitHub help
+### Credits Stack overflow creating a .gitignore GitHub help Udacity Help 
 
 

@@ -157,7 +157,7 @@ def user_stats(df):
     count_user = df['User Type'].value_counts()
     print('Total count of user types {}.'.format(count_user))
 
-    # TO DO: Display counts of gender
+    # TO DO: Display counts of gender except for washington 
     df['Gender'].fillna('Not given',inplace=True)
     count_user_gender = df['Gender'].value_counts()
     if city == 'washington':
