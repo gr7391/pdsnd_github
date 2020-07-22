@@ -1,7 +1,7 @@
 """
 This program analyzes bikeshare data for several cities and
 interactively displays important summary statistics for each city.
-Gregory Rowe
+Author Gregory Rowe
 """
 
 import time
@@ -177,7 +177,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-    #allows the user the option of seeing 5 lines raw data
+    #allows the user the option of seeing 5 lines raw data when the user asks next 5 lines print
 
     show_data = input ('\nWould you like to see five lines of raw data? Enter yes or no\n')
     count = 1

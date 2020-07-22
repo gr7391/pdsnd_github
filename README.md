@@ -6,6 +6,7 @@ Post Your work on Github
 
 ### Description
 Final project for programming for data science Nano Degree 
+updating documentation bikeshare.py using text editor atom
 
 ### Files used
 Bikeshare.py chicago.csv new_york_city.csv washington.csv .gitignore 
