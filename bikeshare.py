@@ -54,7 +54,6 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -100,7 +99,6 @@ def time_stats(df):
     hours_count = original_df['hours'].value_counts()
 
     print('The most common hour is {} and count : {}'.format(hours_count.idmax(),hours_count.max()))
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
