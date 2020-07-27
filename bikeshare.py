@@ -46,7 +46,7 @@ def get_filters():
     def dayname():
         day = str(input('Type day :')).lower()
         if day not in days:
-            print('Please select day from monday, tuesady, wednesday, thursday, friday, saturday, sunday, or all .').lower()
+            print('Please select day from monday, tuesday, wednesday, thursday, friday, saturday, sunday, or all .').lower()
             day = dayname()
         return day
     day = dayname()
@@ -66,8 +66,6 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-
-
     return df
 
 
@@ -120,7 +118,7 @@ def station_stats(df):
 
     # TO DO: display most commonly used end station
     End_Station_counts = df['End Station'].value_counts()
-    print('The most commonly used end station is "{}" and count:      {}'.format(End_Station_counts.idmax(),End_Station_counts.max()))
+    print('The most commonly used end station is "{}" and count: {}'.format(End_Station_counts.idmax(),End_Station_counts.max()))
 
     # TO DO: display most frequent combination of start station and end station trip
     df['Start End stations'] = df['Start Station'] + df['End Station']
@@ -165,6 +163,7 @@ def user_stats(df):
 
     if city == 'chicago' or city == 'new york':
     print('Total Counts of user Gender type are {}.'.format(count_user_gender))
+
     # TO DO: Display earliest, most recent, and most common year of birth
     birth_year = df['Birth Year'].value_counts()
     if city == 'washington':
@@ -177,8 +176,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-    #allows the user the option of seeing 5 lines raw data
-
+    #allows the user the option of seeing 5 lines of raw data
     show_data = input ('\nWould you like to see five lines of raw data? Enter yes or no\n')
     count = 1
     while show_data.lower() != 'no':
